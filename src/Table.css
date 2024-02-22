@@ -1,0 +1,94 @@
+.table-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 2;
+}
+
+.menu {
+  position: absolute;
+  top: 30px;
+  right: -160px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item input {
+  margin-right: 5px;
+}
+
+.table-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.row {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.cell {
+  flex: 1;
+  padding: 10px;
+}
+
+.header {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+@media only screen and (max-width: 768px) {
+  .table-container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .menu {
+    right: -140px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .table-container {
+    width: 95%;
+    padding: 5px;
+  }
+
+  .menu {
+    right: -120px;
+  }
+
+  .table-title {
+    font-size: 20px;
+  }
+
+  .cell {
+    padding: 5px;
+  }
+}
